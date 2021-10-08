@@ -8,7 +8,7 @@ WHERE billing_country IN('USA');
 --2. Find the largest order total amount.
 SELECT MAX(total) FROM invoice;
 --3. Find the smallest order total amount.
-SELECT MAX(total) FROM invoice;
+SELECT MIN(total) FROM invoice;
 --4. Find all orders bigger than $5.
 SELECT * FROM invoice 
 WHERE total > 5;
